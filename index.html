@@ -1,0 +1,67 @@
+<!-- 
+  Calculator. После вычисления выражения при нажатии цифровых клавиш панель выражения очищается.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script src="./vue/vue.global.js"></script>     
+    <script defer type="text/javascript" src="./js/script.js"></script>     
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <div>
+    <div class="panel_vyrazheniya" id="panel_vyrazheniya"></div>         
+  </div>
+    <div class="panel_rezultata" id="panel_rezultata"></div>     
+<br>
+<!-- <br> -->
+
+<div>
+  <button class="knopka_vvoda" style="visibility: hidden;" onclick="zaglushka()">&nbsp</button>
+  <button class="knopka_vvoda" onclick="zaglushka()">CE</button>  
+  <button class="knopka_vvoda" onclick="ochistit_vyrazhenie()">C</button>  
+  <button class="knopka_vvoda" onclick="udalit_poslednij_simvol()">BS</button>    
+  <br>  
+  <button class="knopka_vvoda" onclick="vvesti_1()">1</button>
+  <button class="knopka_vvoda" onclick="vvesti_2()">2</button>  
+  <button class="knopka_vvoda" onclick="vvesti_3()">3</button>  
+  <button class="knopka_vvoda" onclick="vvesti_plyus()">+</button>    
+  <br>
+  <button class="knopka_vvoda" onclick="vvesti_4()">4</button>
+  <button class="knopka_vvoda" onclick="vvesti_5()">5</button>  
+  <button class="knopka_vvoda" onclick="vvesti_6()">6</button>  
+  <button class="knopka_vvoda" onclick="vvesti_minus()">-</button>  
+  <br>
+  <button class="knopka_vvoda" onclick="vvesti_7()">7</button>
+  <button class="knopka_vvoda" onclick="vvesti_8()">8</button>
+  <button class="knopka_vvoda" onclick="vvesti_9()">9</button>  
+  <button class="knopka_vvoda" onclick="vvesti_umnozhit()">*</button>  
+  <br>
+  <button class="knopka_vvoda" onclick="vvesti_plus_minus()">+/-</button>
+  <button class="knopka_vvoda" onclick="vvesti_0()">0</button>
+  <button class="knopka_vvoda" onclick="vvesti_tochku()">.</button>  
+  <button class="knopka_vvoda" onclick="vvesti_razdelit()">/</button>  
+  <br> 
+  <button class="knopka_vvoda" style="visibility: hidden;" onclick="zaglushka()">&nbsp</button>
+  <button class="knopka_vvoda" style="visibility: hidden;" onclick="zaglushka()">&nbsp</button>     
+  <button class="knopka_vvoda" style="visibility: hidden;" onclick="zaglushka()">&nbsp</button>
+  <button class="knopka_vvoda" onclick="vvesti_ravno()">=</button>
+  <br>
+  <!-- <br>   -->
+  <button class="knopka_vvoda" style="visibility: visible;" onclick="steret_chislo_v_pamyati()">MC</button>
+  <button class="knopka_vvoda" style="visibility: visible;" onclick="prochitat_chislo_iz_pamyati()">MR</button>     
+  <button class="knopka_vvoda" style="visibility: visible;" onclick="zaglushka()">M+</button>
+  <button class="knopka_vvoda" style="visibility: visible;" onclick="zaglushka()">M-</button> 
+  <br>
+  <button class="knopka_vvoda" style="visibility: hidden;" onclick="zaglushka()">&nbsp</button>
+  <button class="knopka_vvoda" style="visibility: hidden;" onclick="zaglushka()">&nbsp</button>     
+  <button class="knopka_vvoda" style="visibility: hidden;" onclick="zaglushka()">&nbsp</button>
+  <button class="knopka_vvoda" style="visibility: visible;" onclick="zapisat_chislo_v_pamyat()">MS</button>  
+  <br>
+  </div>
+
+</body>
+</html>
